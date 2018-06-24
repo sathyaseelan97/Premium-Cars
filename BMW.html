@@ -1,0 +1,344 @@
+﻿<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+.mySlides
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#div1
+{
+	height:1000px;	
+	width:100%;
+}
+#div2
+{	
+	background-color:black;
+	font-size:25px;
+	height:auto;
+	width:auto;
+	color:white;
+}
+#div3
+{	
+	background-color:black;
+	font-size:25px;
+	height:auto;
+	width:auto;
+	color:white;
+}
+#div4
+{	
+	background-color:black;
+	font-size:25px;
+	height:auto;
+	width:auto;
+	color:white;
+}
+#div5
+{	
+	background-color:black;
+	font-size:25px;
+	height:auto;
+	width:auto;
+	color:white;
+}
+</style>
+<script>
+function deb()
+{
+	var a=document.getElementById('d').value;
+	if(a=="")
+	{
+	document.getElementById('id1').innerHTML="Enter Name";
+	}
+	else
+	{
+	document.getElementById('id1').innerHTML="";
+	flag1=1;
+	}
+}
+function debno()
+{
+	var a=document.getElementById('dno').value;
+	var b=/^([0-9]){16}$/;
+	if(a=="")
+	{
+	document.getElementById('id2').innerHTML="Enter Card Number";
+	}
+	else if(b.test(a))
+	{
+	document.getElementById('id2').innerHTML="";
+	flag2=1;
+	}
+	else
+	{
+	document.getElementById('id2').innerHTML="Enter proper Card number";
+	}
+}
+function cvvno()
+{
+	var a=document.getElementById('cno').value;
+	var b=/^([0-9]){3}$/;
+	if(a=="")
+	{
+	document.getElementById('id3').innerHTML="Enter cvv";
+	}
+	else if(b.test(a))
+	{
+	document.getElementById('id3').innerHTML="";
+	flag3=1;
+	}
+	else
+	{
+	document.getElementById('id3').innerHTML="Enter proper CVV";
+	}
+}
+function amount()
+{
+	var a=document.getElementById('a').value;
+	var b=/^([0-9]){6}$/;
+	if(a=="")
+	{
+	document.getElementById('id4').innerHTML="Enter amount";
+	}
+	else if(b.test(a))
+	{
+	document.getElementById('id4').innerHTML="";
+	flag4=1;
+	}
+	else
+	{
+	document.getElementById('id4').innerHTML="Enter proper amount";
+	}
+}
+
+function mysub()
+{
+	if(flag1==1&&flag2==1&&flag3==1&&flag4==1)
+	{
+	alert("Payment Successfull");
+	alert("Contact a branch manager for further Queries");
+	}
+	else
+	{
+	alert("Enter all Fields");
+	}
+}
+</script>
+<body bgcolor="">
+<div class="w3-top">
+  <div class="w3-black w3-xlarge" style="max-width:100%;margin:auto">
+  <div style="max-width:100%;margin:auto" class="w3-center w3-black w3-padding-16">PREMIUM CARS
+  <nav class="w3-black w3-bar" style="float:right">
+  <a href="#Home" class="w3-button w3-bar-item">Home</a>
+  <a href="#showroom" class="w3-button w3-bar-item">Showrooms</a>
+  <a href="#Book" class="w3-button w3-bar-item">Book</a>
+  <a href="#Contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+	</div>
+  </div>
+  </div>
+<section id="Home">
+  <img class="mySlides" src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Bmw-i8-pictures.jpg"
+  style="width:100%">
+  <img class="mySlides" src="https://www.hdwallpapers.in/walls/bmw_5_series-wide.jpg"
+  style="width:100%">
+  <img class="mySlides" src="c4.jpg"
+  style="width:100%">
+ </section>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">PREMIUM CARS</h2>
+  <p class="w3-opacity"><i>We sell cars</i></p>
+  <p class="w3-justify">We have created a car website.The motive of this website is to let you know about cars we sell in our showroom.In our showroom we sell exclusively BMW cars.this site will be helpful for you to know about the models in our showroom and also the on-road price of the cars.</p>
+</section>
+<nav class="w3-bar w3-black">
+  <div class="w3-bar-item">New Cars</div>
+</nav>
+<div id="div2">
+<p style="font-family:Times New Roman;">BMW 5 Series:</p>
+<ul>
+<li>Ex-Showroom Price (incl. GST): 49,90,000</li>
+<li>RTO                          : 7,50,800</li>
+<li>Insurance			         : 2,12,041</li>
+<li>Tax Collected at Source (TCS): 49,900</li>
+<li>On-Road Price (Chennai)	     :  60,02,741</li>
+</ul>
+</div>
+<div>
+<img src="http://monthlymale.com/wp-content/uploads/2016/07/zombdrive.com_.jpg" style="width:100%" >
+</div>
+<div id="div3">
+<p style="font-family:Times New Roman;">BMW i8</p>
+<ul>
+<li>Ex-Showroom Price (incl. GST):
+2,62,00,000</li>
+<li>RTO	:39,32,300</li>
+<li>Insurance :10,72,998</li>
+<li>Tax Collected at Source (TCS)	:2,62,000</li>
+<li>On-Road Price (Chennai)	₹ 3,14,67,298</li>
+</ul>
+</div>
+<div>
+<img src="https://www.doublemesh.com/wp-content/uploads/2016/11/BMW-i8-blue-photo-1080-wallpaper.jpg" style="width:100%;">
+</div>
+<div id="div4" style:font-family="Times New Roman;">
+<p style="font-family:Times New Roman;">BMW X3</p>
+<ul>
+<li>Ex-Showroom Price (incl. GST): 47,20,000</li>
+<li>RTO                          : 7,10,300</li>
+<li>Insurance			         : 2,01,081</li>
+<li>Tax Collected at Source (TCS): 47,200</li>
+<li>On-Road Price (Chennai)	     : 56,78,581</li>
+</ul>
+</div>
+<div>
+<img src="http://indianautosblog.com/wp-content/uploads/2016/05/2017-BMW-X3-rendering.jpg" style="width:100%">
+</div>
+<div id="div5" style:font-family="Times New Roman;">
+<p style="font-family:Times New Roman;">BMW x5</p>
+<ul>
+<li>Ex-Showroom Price (incl. GST): 67,90,000</li>
+<li>RTO                          : 10,61,732</li>
+<li>Insurance			         : 2,84,941</li>
+<li>Tax Collected at Source (TCS):67,901 </li>
+<li>On-Road Price (Chennai)	     :82,04,574 </li>
+</ul>
+</div>
+<div>
+<img src="x5.jpg" style="width:100%">
+</div>
+</div>
+<nav class="w3-bar w3-black">
+<div class="w3-bar-item">Showrooms</div>
+</nav>
+<div id="showroom" class="w3-container w3-padding-30 w3-center w3-white w3-medium;">
+<p>We have our showrooms only in Chennai</p>
+<p>PREMIUM CARS<br>
+Branch:Adyar<br>
+Address:82/1,Ganga Nagar<br>
+Phone no:044-12345678<br>	
+</p>
+<p>PREMIUM CARS<br>
+Branch:Velachery<br>
+Address:32/2,Yamuna Nagar<br>
+Phone no:044-92382378<br>	
+</p>
+</div>
+<nav class="w3-bar w3-black">
+<div class="w3-bar-item">Book</div>
+</nav>
+<div id="Book" class="w3-container w3-padding-30 w3-center w3-white w3-medium;">
+You can book your car from your home by registering yourself in following form<br><br>
+<br>
+<form name="model" id="f1">
+<label>MODEL&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	<select id="m" name="model">			
+  	<option value="1">X3</option>
+	<option value="2">5 Series</option>
+	<option value="3">i8</option>
+	<option value="4">X5</option>
+</select><br><br>
+<label>COLOR&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	<select id="c" name="color">			
+  	<option value="1">Alpine White</option>
+	<option value="2">Deep Sea Blue</option>
+	<option value="3">Black</option>
+	<option value="4">Cashmere Silver</option>
+</select>
+<br>
+<p>Customers can book their models by paying the initial installment not less than 3,00,000</p>
+
+	<span id="id1" style="color:green;"></span><br>
+	<label align="left-side">NAME&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>	
+	<input type="text" id="d" onblur="deb()" required><br>
+	<span id="id2" style="color:green;"></span><br>
+	<label align="left-side">CARD NO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	<input type="text" id="dno" onblur="debno()" maxlength="16" required><br>
+	<span id="id3" style="colour:green;"></span><br>
+	<label align="left-side">CVV&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	<input type="password" id="cno" onblur="cvvno()" maxlength="3" required><br><br>
+	<span id="id4" style="color:green;"></span><br>
+	<label align="left-side">AMOUNT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	<input type="text" id="a" onblur="amount()" maxlength="6" required><br><br>
+	<label>VALID TO/EXPIRY DATE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	<select id="m" name="month">
+	<option value="">MM</option>			
+  	<option value="1">01</option>
+	<option value="2">02</option>
+	<option value="3">03</option>
+  	<option value="4">04</option>
+  	<option value="5">05</option>
+  	<option value="6">06</option>			
+  	<option value="7">07</option>
+	<option value="8">08</option>
+	<option value="9">09</option>
+  	<option value="10">10</option>
+  	<option value="11">11</option>
+	<option value="12">12</option>
+</select>
+/<select id="m1" name="year">
+	<option value="">YYYY</option>			
+  	<option value="1">2019</option>
+	<option value="2">2020</option>
+	<option value="3">2021</option>
+  	<option value="4">2022</option>
+  	<option value="5">2023</option>
+  	<option value="6">2024</option>			
+  	<option value="7">2025</option>
+	<option value="8">2026</option>
+	<option value="9">2027</option>
+  	<option value="10">2028</option>
+  	<option value="11">2029</option>
+	<option value="12">2030</option>
+</select><br><br>
+<label align="left-side">DEBIT CARD TYPE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<select id="m2" name="debit1">
+	<option value="">Select debit card type</option>
+	<option value="visa">VISA debit card</option>
+	<option value="rupay">Rupay debit card</option>
+	<option value="visa">MasterCard debit card</option>
+</select><br><br>
+<button id="aa" align="center" type="submit" onclick="mysub()" value="submit"><center>Make Payment</button></center>
+</form>
+</div>
+<nav class="w3-bar w3-black">
+  <div class="w3-bar-item">Contact</div>
+</nav>
+<div id="Contact" class="w3-container w3-padding-30 w3-center w3-white w3-medium;">
+<p>
+Manager:Sathya Seelan<br>
+Mail ID:premiumcars@gmail.com<br>
+Contact no:9898989898<br>
+</p></div>
+<footer class="w3-container w3-padding-30 w3-center w3-black w3-medium;">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">2017 © Premium Cars Pvt Ltd. ALL Rights Reserved.</p>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+function carousel()
+{
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>
